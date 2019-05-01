@@ -1,0 +1,11 @@
+(DEFUN palindrome (input) 
+	(IF (EQUAL input (REVERSE input))
+			(FORMAT T "The input ~A is palindrome~%" input)
+			(FORMAT T "The input ~A isn't palindrome~%" input)))
+
+(palindrome '(a b c))
+(palindrome '(m a d a m))
+(palindrome '(cat dog))
+(palindrome '())
+(palindrome '(cat dog bird bird dog cat))
+(palindrome '(apd dpa))
